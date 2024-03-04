@@ -6,7 +6,7 @@
 <!--<![endif]-->
 <head data-machine-id="CHI2-WEB529">
     <!-- MachineID: CHI2-WEB529 -->
-    <title>Login</title>
+    <title>Admin Login</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,requiresActiveX=true" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -792,6 +792,12 @@ Roblox.Endpoints.Urls = Roblox.Endpoints.Urls || {};
         <a class="font-header-2 nav-menu-title text-header" href="/develop">Create</a>
       </li>
       <li>
+	<a class="font-header-2 nav-menu-title text-header" href="/test">Test Services</a>
+      </li>
+        <a class="font-header-2 nav-menu-title text-header" href="/it">IT Support</a>
+      </li>
+      <li>
+      <li>
         <a class="font-header-2 nav-menu-title text-header robux-menu-btn" href="/robux?ctx-nav">
           <div class="menu-text-container">
             <span class="robux-10-percent-more-label">10% More</span>
@@ -1177,12 +1183,12 @@ function checkRobloxInstall() {
     <script type="text/javascript">
 		$(function() {
 		    Roblox.GenericConfirmation.open({
-		        titleText: "Upgrade your iOS",
-		        bodyContent: "Your iOS0 is not supported anymore and will not work in the near future. We do recommend that you have at least iOS7.",
+		        titleText: "Admin Warning",
+		        bodyContent: "This is a admin login for Roblox employees ONLY. This page is not for the normal Roblox user to access, and if your internet is not connected to our Internal VPN, your IP may be banned.",
 		        acceptText: "Continue",
-		        declineText: "Remind me later",
+		        declineText: "Leave",
 		        acceptColor: Roblox.GenericConfirmation.none,
-		        declineColor: Roblox.GenericConfirmation.blue,
+		        declineColor: Roblox.GenericConfirmation.red,
 		        allowHtmlContent: false,
 		        dismissable: true
 		    });
